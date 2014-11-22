@@ -17,11 +17,3 @@ origin = [None for i in sentence]
 pos = [0]
 f(origin, 0, len(origin) - 1,sentence, pos)
 print ''.join(origin)
-
-
-
-    
-
-
-    
-
