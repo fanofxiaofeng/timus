@@ -22,8 +22,4 @@ for i in range(len(pos), 0, -1):
     temp.remove(remainPos)
     remainPos = temp[0]
     cnt += data[i]
-print cnt
-	
-	
-    
-        
+print cnt       
