@@ -15,7 +15,7 @@ for i in temp:
 		for k in temp:
 			if i == j or i == k or j == k or k == 3:
 				continue
-			s = data[1][i] + data[i][j] + data[j][k] + data[k][5]
+			s = data[1][i] + data[i][j]  + data[j][k] + data[k][5]
 			if s < opt:				
 				opt = s
 				record = [1, i, j, k, 5]
