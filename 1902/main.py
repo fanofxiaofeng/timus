@@ -5,7 +5,14 @@ import math
 [n, t, s] = map(int, sys.stdin.readline().split())
 data = map(int, sys.stdin.readline().split())
 for si in data:
-	len = n - abs(s - si) / float(t) * n
-	ans = len / 2.0 / n * t + max(s, si) 
-	print "%.6f" % ans
+	ans = t - abs(s - si) 
+	isOdd = (ans % 2 == 1)
+	ans = ans / 2 + max(s, si)
+	
+	if isOdd:
+		tailStr = "500000"
+	else:
+		tailStr = "000000"
+	
+	print "%d.%s" % (ans, tailStr)
 
