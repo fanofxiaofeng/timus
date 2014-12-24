@@ -8,4 +8,4 @@ if n == 1:
 elif n == 2:
 	print 155
 else:
-	a = '1575' + '0' * (n - 3)
+	print '1575' + '0' * (n - 3)
